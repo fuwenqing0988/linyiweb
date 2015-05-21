@@ -6,3 +6,4 @@ from show_signin import ShowSigninHandelr
 
 
 from test import TestHandelr
+from daltest import DalTestHandelr
