@@ -100,3 +100,16 @@ function test_province(){
         }
     });
 }
+
+function test_city(city_code){
+    $.ajax({
+        type:'GET',
+        url: '/area/city',
+        dataType: 'json',
+        data:{'code':city_code},
+        async:false,
+        success:function(msg){
+            alert(JSON.stringify(msg));
+        }
+    });
+}

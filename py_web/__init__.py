@@ -7,3 +7,4 @@ from show_shop_list import ShowShoplistHandelr
 
 
 from test import TestHandelr
+from daltest import DalTestHandelr

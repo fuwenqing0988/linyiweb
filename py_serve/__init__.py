@@ -3,3 +3,5 @@
 from account import AccountHandler
 from area import AreaHandler
 from shop import ShopHandler
+from pfsc import PFSCHandler
+

@@ -9,6 +9,7 @@ import tornado.web
 
 from py_web import *
 from py_serve import *
+from py_server_test import *
 
 from tornado.options import define,options
 from setproctitle import setproctitle
@@ -29,6 +30,9 @@ if __name__=='__main__':
         (r'/show_signin',ShowSigninHandelr),
         (r'/show_shop_list',ShowShoplistHandelr),
         (r'/area/(?P<method>[_a-z\d]+)',AreaHandler),
+        (r'/pfsctest/(?P<method>[_a-z\d]+)',Test_PFSCHandler),
+        (r'/daltest',DalTestHandelr),
+
     ]
 
     ajax_list=[

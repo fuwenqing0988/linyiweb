@@ -20,3 +20,11 @@ class PFSCManager(Manager):
             return  data
         data=self.getData(key='sCode',value=sCode,list_data=True)
         return data
+
+    def getlist(self):
+        """
+        获取所有批发市场列表
+        :return:
+        """
+        data=self.getData()
+        return data
